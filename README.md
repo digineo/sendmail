@@ -1,7 +1,7 @@
 # Go sendmail
 
-[![GoDoc](https://godoc.org/github.com/meehow/sendmail?status.svg)](https://godoc.org/github.com/meehow/sendmail)
-[![Build Status](https://travis-ci.org/meehow/sendmail.svg?branch=master)](https://travis-ci.org/meehow/sendmail)
+[![GoDoc](https://godoc.org/github.com/digineo/sendmail?status.svg)](https://godoc.org/github.com/digineo/sendmail)
+[![Build Status](https://travis-ci.org/digineo/sendmail.svg?branch=master)](https://travis-ci.org/digineo/sendmail)
 
 
 This package implements the classic method of sending emails, well known
@@ -72,3 +72,10 @@ tpl.ExecuteTemplate(&sm.Text, "email", &struct{ Name string }{"Dominik"})
 - [ ] multipart emails (HTML + Text)
 - [ ] attachments
 - [ ] inline attachments
+
+## Credits
+
+This is a fork of [sendmail](https://github.com/meehow/sendmail) by
+[Michał Adamski](https://ert.pl/). It adds changes documented in
+[this PR](https://github.com/meehow/sendmail/pull/3), but so far they
+haven't been merged upstream.
